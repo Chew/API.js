@@ -1,0 +1,24 @@
+{
+  "name": "trbmb-api",
+  "version": "0.1.0",
+  "description": "An API for retrieving TRBMB Phrases",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Chewsterchew/trbmb-api"
+  },
+  "keywords": [
+    "trbmb"
+  ],
+  "author": "Chewsterchew",
+  "license": "None",
+  "bugs": {
+    "url": "https://github.com/Chewsterchew/trbmb-api/issues"
+  },
+  "homepage": "http://trbmb.chew.pw",
+  "dependencies": {
+    "express": "^4.11.0"
+  },
+  "engines": {
+    "node": "4.x.x"
+  }
+}
