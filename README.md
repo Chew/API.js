@@ -1,18 +1,30 @@
-# TRBMB API
+# ChewAPI
 
-Ever wanted a TRBMB api? Here you go!
+Ever wanted some api's? Knock yourself out, carefully.
 
-## Production host
-[http://ron-swanson-quotes.herokuapp.com/v2/quotes](http://ron-swanson-quotes.herokuapp.com/v2/quotes)
+## Site
 
-The `Access-Control-Allow-Origin` header is set to `*` so that you can make requests from any domain.
+[Website](http://api.chew.pw)
 
 ## APIs
 
-### `GET /`
+### `GET /trbmb`
+
 Returns an array with one quote:
+
 ```
-[
-	"That really exposes my memes"
-]
+["That really exposes my memes"]
 ```
+
+## Examples
+
+### Ruby
+
+```ruby
+require 'RestClient'
+require 'json'
+
+puts JSON.parse(RestClient.get("https://api.chew.pw/trbmb"))[0]
+```
+
+Add yours in a PR!
