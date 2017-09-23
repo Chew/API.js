@@ -1,10 +1,10 @@
 {
-  "name": "trbmb-api",
+  "name": "ChewAPIs",
   "version": "0.1.0",
-  "description": "An API for retrieving TRBMB Phrases",
+  "description": "A collection of APIs for your Chew needs.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Chewsterchew/trbmb-api"
+    "url": "https://github.com/Chewsterchew/API"
   },
   "keywords": [
     "trbmb"
@@ -12,9 +12,9 @@
   "author": "Chewsterchew",
   "license": "None",
   "bugs": {
-    "url": "https://github.com/Chewsterchew/trbmb-api/issues"
+    "url": "https://github.com/Chewsterchew/API/issues"
   },
-  "homepage": "http://trbmb.chew.pw",
+  "homepage": "http://api.chew.pro",
   "dependencies": {
     "express": "^4.11.0"
   },
