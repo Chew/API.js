@@ -4,7 +4,7 @@ Ever wanted some api's? Knock yourself out, carefully.
 
 ## Site
 
-[Website](http://api.chew.pw)
+[Website](http://api.chew.pro)
 
 ## APIs
 
@@ -24,7 +24,7 @@ Returns an array with one quote:
 require 'RestClient'
 require 'json'
 
-puts JSON.parse(RestClient.get("https://api.chew.pw/trbmb"))[0]
+puts JSON.parse(RestClient.get("http://api.chew.pro/trbmb"))[0]
 ```
 
 Add yours in a PR!
