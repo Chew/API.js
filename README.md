@@ -16,9 +16,17 @@ Returns an array with one quote:
 ["That really exposes my memes"]
 ```
 
+### `GET /acronym/:acronym`
+
+Returns a completed acronym for the given :acronym
+
+```
+{"phrase":"Calculator Axe Hook"}
+```
+
 ## Examples
 
-### Ruby
+### Ruby (`GET /trbmb`)
 
 ```ruby
 require 'RestClient'
