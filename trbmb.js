@@ -23,6 +23,6 @@ module.exports = {
       phrase = phrase + lines2[i][(Math.floor(Math.random() * lines2[i].length))];
     }
 
-    return "[\""+phrase+"\"]";
+    return JSON.parse("[\""+phrase+"\"]");
   }
 };
