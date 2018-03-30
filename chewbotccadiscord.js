@@ -175,13 +175,13 @@ module.exports = {
         "Command": "%^trbmb",
         "Arguments": "None",
         "Aliases": "None",
-        "Description": "Generates a TRBMB quote. Based on TRBMB Gen"
+        "Description": "Generates a TRBMB quote. Based on [TRBMB Gen](http://trbmb.chew.pw)"
       }, {
         "Plugin": "Quotes",
         "Command": "%^acronym",
         "Arguments": "Acronym to solve",
         "Aliases": "None",
-        "Description": "Uses http://acronym.chew.pro to fill out an acronym."
+        "Description": "Uses [Acronym Gen](http://acronym.chew.pro) to fill out an acronym."
       }, {
         "Plugin": "Rate",
         "Command": "%^rate",
@@ -242,6 +242,12 @@ module.exports = {
         "Arguments": "Mention a user (optional)",
         "Aliases": "%^userinfo",
         "Description": "Shows basic stats for a user."
+      }, {
+        "Plugin": "Feedback",
+        "Command": "%^feedback",
+        "Arguments": "Feedback to send",
+        "Aliases": "None",
+        "Description": "Send feedback to the help server, for chew to read and investigate."
       }
     ];
 
