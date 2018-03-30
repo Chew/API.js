@@ -3,6 +3,7 @@
 var express = require('express');
 var trbmb = require('./trbmb');
 var acronym = require('./acronym');
+var chewbotccadiscord = require('./chewbotccadiscord');
 var app = express();
 var port = process.env.PORT || 3000;
 
@@ -21,6 +22,10 @@ app.get('/', function(req, res) {
 
 app.get('/acronym/:acronym', function(req, res) {
   res.send(acronym.genAcro(req.params))
+});
+
+app.get('/chewbotcca/discord/command/:command', function(req, res) {
+  res.send(chewbotccadiscord.getCommand(req.params))
 });
 
 app.listen(port, function() {
