@@ -18,7 +18,7 @@ module.exports = {
         "Plugin": "About",
         "Command": "%^help",
         "Arguments": "None",
-        "Aliases": "%^commands",
+        "Aliases": "%^commands, %^help",
         "Description": "Shows a link to a list of commands."
       }, {
         "Plugin": "About",
@@ -248,6 +248,36 @@ module.exports = {
         "Arguments": "Feedback to send",
         "Aliases": "None",
         "Description": "Send feedback to the help server, for chew to read and investigate."
+      }, {
+        "Plugin": "Google",
+        "Command": "%^google",
+        "Arguments": "Search query",
+        "Aliases": "None",
+        "Description": "Returns 5 results for a google query."
+      }, {
+        "Plugin": "Roles",
+        "Command": "%^assignrole",
+        "Arguments": "Role name & User",
+        "Aliases": "None",
+        "Description": "Gives a role to a user."
+      }, {
+        "Plugin": "Roles",
+        "Command": "%^removerole",
+        "Arguments": "Role name & User",
+        "Aliases": "None",
+        "Description": "Remove a role from a user."
+      }, {
+        "Plugin": "Minecraft",
+        "Command": "%^uuid",
+        "Arguments": "Minecraft Username",
+        "Aliases": "None",
+        "Description": "Returns the UUID for a user."
+      }, {
+        "Plugin": "Minecraft",
+        "Command": "%^blacklist",
+        "Arguments": "Server IP",
+        "Aliases": "None",
+        "Description": "Checks to see if a user is blacklisted."
       }
     ];
 
