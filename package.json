@@ -16,7 +16,8 @@
   },
   "homepage": "http://api.chew.pro",
   "dependencies": {
-    "express": "^4.11.0"
+    "express": "^4.11.0",
+    "request": "^2.85.0"
   },
   "engines": {
     "node": "4.x.x"
