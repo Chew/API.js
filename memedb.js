@@ -11,7 +11,8 @@ module.exports = {
     meme = me['meme'];
     meme = meme.toLowerCase();
 
-    var request = require("request")
+    var request = require("request");
+    const levenshteinDistance = require("levenshtein-distance");
 
     var url = "http://chewbotcca.co/memedb/memes.json";
 
@@ -23,7 +24,22 @@ module.exports = {
       if (!error && response.statusCode === 200) {
         blobofstuff = body;
       }
-    })
+    });
+
+    var memes = [];
+
+    for (var i = 0; i < blobofstuff.length; i++) {
+      memes[i] = blobofstuff[i]['Meme'];
+    }
+
+    let collection = new levenshteinDistance(memes);
+
+    collection.find(meme, function(result) {
+      if (result != me['meme']) {
+        output['note'] = "The meme you were looking for didn't exist, so we picked the meme closest to your request.";
+      }
+      meme = result;
+    });
 
     for (var i = 0; i < blobofstuff.length; i++) {
       if (meme == 'random') {
