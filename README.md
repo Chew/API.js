@@ -32,6 +32,16 @@ Returns command info for the [Chewbotcca Discord Bot](http://github.com/Chewbotc
 {"plugin":"Quotes","alias":["None"],"description":"Generates a TRBMB quote. Based on [TRBMB Gen](http://trbmb.chew.pw)","args":"None"}
 ```
 
+### `GET /chewbotcca/memedb/:meme`
+
+Returns memes from the [Meme Database](http://chewbotcca.co/memedb).
+
+Call /random for a random meme.
+
+```json
+{"meme":"nottheadmin","url":"http://chewbotcca.co/memedb/nottheadmin.png"}
+```
+
 ## Examples
 
 ### Ruby (`GET /trbmb`)
