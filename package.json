@@ -17,6 +17,7 @@
   "homepage": "http://api.chew.pro",
   "dependencies": {
     "express": "^4.11.0",
+    "levenshtein-distance": "0.0.2",
     "request": "^2.85.0"
   },
   "engines": {
