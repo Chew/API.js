@@ -8,4 +8,4 @@ Ever wanted some APIs? Knock yourself out, carefully.
 
 ## APIs
 
-Documentation can be found on the [wiki](wiki).
+Documentation can be found on the [wiki](https://github.com/Chewsterchew/API/wiki).
