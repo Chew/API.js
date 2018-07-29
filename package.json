@@ -9,6 +9,9 @@
   "keywords": [
     "trbmb"
   ],
+  "scripts": {
+    "start": "node server.js"
+  },
   "author": "Chewsterchew",
   "license": "None",
   "bugs": {
