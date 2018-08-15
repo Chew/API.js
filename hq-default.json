@@ -1,0 +1,25 @@
+{
+  "region": null,
+  "question": {
+    "question": null,
+    "choice1": null,
+    "choice2": null,
+    "choice3": null,
+    "correct": null
+  },
+  "choices": {
+    "picked1": null,
+    "picked2": null,
+    "picked3": null
+  },
+  "speech": {
+    "monologue": null
+  },
+  "game": {
+    "q#": null,
+    "time": null,
+    "prize": null,
+    "winners": null,
+    "cashwon": null
+  }
+}
