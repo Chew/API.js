@@ -5,6 +5,7 @@ var trbmb = require('./trbmb');
 var acronym = require('./acronym');
 var chewbotccadiscord = require('./chewbotccadiscord');
 var chewbotmemedb = require('./memedb');
+var hq = require('./hq');
 var app = express();
 var port = process.env.PORT || 3000;
 
@@ -31,6 +32,10 @@ app.get('/chewbotcca/discord/command/:command', function(req, res) {
 
 app.get('/chewbotcca/memedb/:meme', function(req, res) {
   res.send(chewbotmemedb.getCommand(req.params))
+});
+
+app.get('/hq/random', function(req, res) {
+  res.send(hq.getRandom(req.params))
 });
 
 app.listen(port, function() {
