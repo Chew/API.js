@@ -9,7 +9,6 @@ module.exports = {
       ques;
 
     function readJsonFileSync(filepath, encoding) {
-
       if (typeof(encoding) == 'undefined') {
         encoding = 'utf8';
       }
@@ -18,14 +17,13 @@ module.exports = {
     }
 
     function getConfig(file) {
-
       var filepath = __dirname + '/' + file;
       return readJsonFileSync(filepath);
     }
 
     ques = getConfig('hq.json');
 
-    var i = Math.floor(Math.random() * (ques.length - 0 + 1) + 0);
+    var i = Math.floor(Math.random() * ques.length);
 
     output['region'] = ques[i]['Region']
     output['question']['question'] = ques[i]['Question']
